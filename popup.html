@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet Extension</title>
+    <style>
+        body {
+            width: 320px;
+            margin: 0;
+            padding: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .balance {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #4CAF50;
+            cursor: pointer;
+        }
+
+        .balance {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 12px;
+        }
+
+        .button {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .transactions {
+            margin-top: 24px;
+        }
+
+        .transaction-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .transaction-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .transaction-title {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .transaction-time {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .transaction-amount {
+            font-size: 14px;
+        }
+
+        .amount-positive {
+            color: #4CAF50;
+        }
+
+        .amount-negative {
+            color: #f44336;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .profile img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .profile h1 {
+            font-size: 16px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="avatar.png" alt="Profile">
+        <h1>Hi there: I am Henry Nguyen</h1>
+    </div>
+
+    <div class="wallet-card">
+        <div class="section-title">
+            <h2>My Wallet</h2>
+            <span class="refresh-icon" id="refresh"> </span>
+        </div>
+        <div class="balance" id="balance">$0.00</div>
+        <div class="button-group">
+            <button class="button" id="sendBtn">Send</button>
+            <button class="button" id="receiveBtn">Receive</button>
+        </div>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+</body>
+</html> 
