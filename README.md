@@ -18,7 +18,6 @@ A browser extension that implements a simple wallet interface using Rust and Web
 Before you begin, ensure you have installed:
 - [Rust](https://www.rust-lang.org/tools/install)
 - [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
-- [Node.js](https://nodejs.org/) (optional, for development)
 
 ## Project Structure
 
@@ -73,12 +72,6 @@ cargo test
 3. Use "Send" and "Receive" buttons to perform transactions
 4. Click the refresh icon to update the balance
 5. View transaction history below the wallet card
-
-## Security Notes
-
-- This is a demonstration project and should not be used with real funds
-- The wallet state is stored in memory and resets when the browser closes
-- No real blockchain integration is implemented
 
 ## Contributing
 
