@@ -99,5 +99,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Inspired by modern wallet interfaces
 
 <video controls>
-  <source src="https://github.com/phoenixit99/rust-extension/blob/main/src/assets/Screen%20Recording%202025-02-07%20at%202.54.36%E2%80%AFPM.mov" type="video/mp4">
+  <source src="https://phoenixit99.github.io/rust-extension/assets/Screen%20Recording%202025-02-07%20at%202.54.36%20PM.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 </video>
