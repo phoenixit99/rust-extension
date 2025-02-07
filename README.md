@@ -2,6 +2,7 @@
 
 A browser extension that implements a simple wallet interface using Rust and WebAssembly.
 
+
 ## Features
 
 - Display wallet balance
@@ -9,6 +10,8 @@ A browser extension that implements a simple wallet interface using Rust and Web
 - Transaction history
 - Real-time balance updates
 - Rust-powered backend logic
+
+<img src="https://github.com/phoenixit99/rust-extension/blob/main/src/assets/Screenshot%202025-02-07%20at%203.02.34%E2%80%AFPM.png" alt="Description of image">
 
 ## Prerequisites
 
@@ -94,3 +97,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Built with Rust and WebAssembly
 - Uses Chrome Extension APIs
 - Inspired by modern wallet interfaces
+
+<video controls>
+  <source src="https://github.com/phoenixit99/rust-extension/blob/main/src/assets/Screen%20Recording%202025-02-07%20at%202.54.36%E2%80%AFPM.mov" type="video/mp4">
+</video>
