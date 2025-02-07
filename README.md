@@ -24,7 +24,7 @@ Before you begin, ensure you have installed:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/phoenixit99/rust-extensions.git
+git clone https://github.com/phoenixit99/rust-extension.git
 cd rust-extension
 ```
 
