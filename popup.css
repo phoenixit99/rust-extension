@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+    background: #1a1b1e;
+    color: #ffffff;
+  }
+  
+  .container {
+    width: 400px;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .section {
+    margin-bottom: 25px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .tech-badge {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Tech Badge Colors */
+  .swift { background-color: #F05138; }
+  .go { background-color: #00ADD8; }
+  .typescript { background-color: #3178C6; }
+  .aws { background-color: #FF9900; }
+  .firebase { background-color: #FFCA28; color: #333; }
+  .ios { background-color: #000000; }
+  .android { background-color: #3DDC84; color: #333; }
+  .react { background-color: #61DAFB; color: #333; }
+  .redux { background-color: #764ABC; }
+  .nodejs { background-color: #339933; }
+  .gulp { background-color: #CF4647; }
+  .dynamodb { background-color: #4053D6; }
+  .mysql { background-color: #4479A1; }
+  .sqlite { background-color: #003B57; }
+  .mssql { background-color: #CC2927; }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .status {
+    margin: 5px 0 0;
+    color: #4CAF50;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add these styles to your existing CSS */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+    object-fit: cover;
+  }
+  
+  /* Add these new styles to your existing CSS */
+  
+  .wallet-section {
+    background: #242529;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .wallet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .wallet-header h2 {
+    margin: 0;
+    border: none;
+  }
+  
+  .refresh-btn {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+  
+  .refresh-btn:hover {
+    background: rgba(76, 175, 80, 0.1);
+    transform: rotate(30deg);
+  }
+  
+  .balance-card {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .balance-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .balance-label {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  
+  .balance-amount {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .balance-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .action-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  .action-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .send-btn {
+    background: #ffffff;
+    color: #4CAF50;
+  }
+  
+  .receive-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .transactions h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .transaction-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .transaction-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .transaction-icon i {
+    font-weight: bold;
+  }
+  
+  .transaction-icon.received {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+  }
+  
+  .transaction-icon.sent {
+    background: rgba(244, 67, 54, 0.1);
+    color: #f44336;
+  }
+  
+  .transaction-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .transaction-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .transaction-date {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .transaction-amount {
+    font-weight: 500;
+  }
+  
+  .transaction-amount.received {
+    color: #4CAF50;
+  }
+  
+  .transaction-amount.sent {
+    color: #f44336;
+  }
+  
+  /* Add Solana-specific styles */
+  .solana-balance {
+    color: #14F195;
+  }
+  
+  .solana-address {
+    word-break: break-all;
+    font-size: 0.8em;
+  } 
