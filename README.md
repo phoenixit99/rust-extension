@@ -11,7 +11,7 @@ A browser extension that implements a simple wallet interface using Rust and Web
 - Real-time balance updates
 - Rust-powered backend logic
 
-<img src="https://github.com/phoenixit99/rust-extension/blob/main/src/assets/Screenshot%202025-02-07%20at%203.02.34%E2%80%AFPM.png" alt="Description of image">
+<img src="https://github.com/phoenixit99/rust-extension/blob/main/src/assets/Screenshot%202025-02-17%20at%201.47.50%E2%80%AFPM.png" alt="Description of image">
 
 ## Prerequisites
 
