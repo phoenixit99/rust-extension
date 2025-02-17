@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rust Extension</title>
+  <title>Trust Wallet Extension</title>
   <link rel="stylesheet" href="popup.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <img src="avatar.png" alt="Profile" class="avatar">
-      <h1>Hi there: <span class="name">I am Henry Nguyen</span></h1>
-    </div>
-    
-    <div class="wallet-section">
-      <div class="wallet-header">
-        <h2>My Wallet</h2>
-        <button class="refresh-btn">
-          <i class="fas fa-sync-alt"></i>
-        </button>
+    <div id="wallet-info">
+      <div class="header">
+        <img src="avatar.png" alt="Profile" class="avatar">
+        <h1>Hi there: <span class="name">I am Henry Nguyen</span></h1>
       </div>
       
-      <div class="balance-card">
-        <div class="balance-info">
-          <span class="balance-label">Total Balance</span>
-          <span class="balance-amount">$2,458.00</span>
+      <div class="wallet-section">
+        <div class="wallet-header">
+          <h2>My Wallet</h2>
+          <button class="refresh-btn">
+            <i class="fas fa-sync-alt"></i>
+          </button>
         </div>
-        <div class="balance-actions">
-          <button class="action-btn send-btn">Send</button>
-          <button class="action-btn receive-btn">Receive</button>
-        </div>
-      </div>
 
-      <div class="transactions">
-        <h3>Recent Transactions</h3>
-        <div class="transaction-list">
-          <div class="transaction-item">
-            <div class="transaction-icon received">
-              <i class="fas fa-arrow-down"></i>
-            </div>
-            <div class="transaction-details">
-              <span class="transaction-title">Received from John</span>
-              <span class="transaction-date">Today, 13:45 PM</span>
-            </div>
-            <span class="transaction-amount received">+$250.00</span>
+        <div class="wallet-info-column">
+          <div class="wallet-info-item">
+            <span class="wallet-info-label">Mnemonic:</span>
+            <span id="mnemonic" class="wallet-info-value"></span>
           </div>
-          
-          <div class="transaction-item">
-            <div class="transaction-icon sent">
-              <i class="fas fa-arrow-up"></i>
-            </div>
-            <div class="transaction-details">
-              <span class="transaction-title">Sent to Alice</span>
-              <span class="transaction-date">Yesterday, 16:20 PM</span>
-            </div>
-            <span class="transaction-amount sent">-$180.00</span>
+          <div class="wallet-info-item">
+            <span class="wallet-info-label">Ethereum Address:</span>
+            <span id="eth-address" class="wallet-info-value"></span>
+          </div>
+          <div class="wallet-info-item">
+            <span class="wallet-info-label">Bitcoin Address:</span>
+            <span id="btc-address" class="wallet-info-value"></span>
           </div>
         </div>
-      </div>
+        
+        <div class="balance-card">
+          <div class="balance-info">
+            <span class="balance-label">Total Balance</span>
+            <span class="balance-amount">$2,458.00</span>
+          </div>
+          <div class="balance-actions">
+            <button class="action-btn send-btn">Send</button>
+            <button class="action-btn receive-btn">Receive</button>
+          </div>
+        </div>
+  
+        <div class="transactions">
+          <h3>Recent Transactions</h3>
+          <div class="transaction-list">
+            <div class="transaction-item">
+              <div class="transaction-icon received">
+                <i class="fas fa-arrow-down"></i>
+              </div>
+              <div class="transaction-details">
+                <span class="transaction-title">Received from John</span>
+                <span class="transaction-date">Today, 13:45 PM</span>
+              </div>
+              <span class="transaction-amount received">+$250.00</span>
+            </div>
+            
+            <div class="transaction-item">
+              <div class="transaction-icon sent">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+              <div class="transaction-details">
+                <span class="transaction-title">Sent to Alice</span>
+                <span class="transaction-date">Yesterday, 16:20 PM</span>
+              </div>
+              <span class="transaction-amount sent">-$180.00</span>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
-  <select id="coin-selector"></select>
   <script src="popup.js"></script>
 </body>
 </html> 
